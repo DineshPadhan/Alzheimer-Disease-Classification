@@ -9,9 +9,8 @@ warnings.filterwarnings('ignore')
 st.sidebar.title("Alzheimer's Disease Classification")
 st.sidebar.markdown("This application classifies Alzheimer's disease stages using machine learning models.")
 
-main_page = st.Page("app.py", title="Alzheimer's Disease Prediction", icon="🧠")
-about = st.Page("./Pages/about.py", title="About", icon="❄️")
-pg = st.navigation([main_page, about])
+st.sidebar.page_link("app.py", label="Home", icon="🧠")
+st.sidebar.page_link("Pages/about.py", label="About", icon="❄️")
 
 st.write("# Alzheimer's Disease Classification Application")
 
